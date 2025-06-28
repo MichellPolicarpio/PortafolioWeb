@@ -1,28 +1,3 @@
-const flagsElement = document.getElementById('flags');
-const textsToChange = document.querySelectorAll("[data-section");
-const changeLanguage = async language =>{
-  const requestJson = await fetch(`./languages/${language}.json`);
-  const texts = await requestJson.json();
-  const cvLink = document.querySelector('[data-lang="cv"]');
-
-  for(const textToChange of textsToChange){
-    const section = textToChange.dataset.section;
-    const value = textToChange.dataset.value;
-
-    textToChange.innerHTML = texts[section][value];
-  }
-  if (language === 'es') {
-    cvLink.href = 'assets/downloads/CV - David García González - ES.pdf';
-  } else {
-    cvLink.href = 'assets/downloads/CV - David García González - EN.pdf';
-  }
-}
-
-flagsElement.addEventListener('click', (e) => {
-  changeLanguage(e.target.parentElement.dataset.language);
-});
-
-
 // window scroll
 $(window).on("scroll", function () {
     var scroll = $(window).scrollTop();
@@ -40,12 +15,11 @@ $(window).on("scroll", function () {
 
 // Document Ready
 $(document).ready(function () {
-
-    // Typing animation
-    new Typed('#type-it', {
-        strings: ['Backend<br>Developer'],
-        typeSpeed: 100,
-    });
+    // Typing animation - REMOVIDO para evitar conflicto con main.js
+    // new Typed('#type-it', {
+    //     strings: ['Backend<br>Developer'],
+    //     typeSpeed: 100,
+    // });
 
     //Owl Carousel
     // $('.owl-carousel').owlCarousel({

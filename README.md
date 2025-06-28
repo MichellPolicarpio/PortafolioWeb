@@ -1,43 +1,48 @@
-# CV Web - Michell Alexis Policarpio Moran
+# 🚀 Portafolio Web - Michell Alexis Policarpio Moran
+
+Portafolio web personal desarrollado con HTML, CSS y JavaScript. Diseñado para mostrar proyectos, habilidades y experiencia profesional.
+
+## 🛠️ Tecnologías Utilizadas
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 ![Typed.js](https://img.shields.io/badge/Typed.js-FF9800?style=for-the-badge&logo=javascript&logoColor=white)
-![Boxicons](https://img.shields.io/badge/Boxicons-1A1A1A?style=for-the-badge&logo=boxicons&logoColor=white)
 
-[🔗 Visualiza el portafolio en vivo en GitHub Pages](https://michellpolicarpio.github.io/PortafolioWeb/)
+## 📋 Características
 
-## 📋 Descripción
+- **Diseño Responsivo**: Adaptable a diferentes tamaños de pantalla
+- **Navegación Suave**: Scroll suave entre secciones
+- **Animaciones**: Efectos visuales y transiciones
+- **Portfolio de Proyectos**: Galería con carruseles de imágenes
+- **Sección de Tecnologías**: Iconos de tecnologías utilizadas
+- **Certificaciones**: Muestra de logros y certificados
+- **Información de Contacto**: Enlaces a redes sociales y contacto
 
-Portfolio web personal de Michell Alexis Policarpio Moran, desarrollador full-stack especializado en C/C++, Java, Python y desarrollo web. Este sitio web presenta de forma profesional la información académica, habilidades técnicas, servicios profesionales y certificaciones. Incluye participación destacada en el NASA Space Apps Challenge 2024, donde desarrollé una aplicación de escritorio educativa dirigida al público infantil utilizando bases de datos públicas de exoplanetas de la NASA.
+## 🎯 Secciones
 
-## 🚀 Características
+1. **Inicio**: Presentación personal con animación de escritura
+2. **Sobre Mí**: Información académica y profesional
+3. **Tecnologías**: Lenguajes y herramientas dominadas
+4. **Servicios**: Servicios profesionales ofrecidos
+5. **Proyectos**: Portfolio de proyectos destacados
+6. **Certificaciones**: Logros y certificados obtenidos
+7. **Contacto**: Información de contacto y redes sociales
 
-- **Diseño Responsivo**: Optimizado para dispositivos móviles, tablets y desktop
-- **Animaciones Suaves**: Efectos de scroll, hover y transiciones
-- **Navegación Intuitiva**: Menú fijo con navegación suave entre secciones
-- **SEO Optimizado**: Meta tags y estructura semántica
-- **Accesibilidad**: Cumple con estándares de accesibilidad web
+## 🚀 Despliegue en GitHub Pages
 
-## 🛠️ Tecnologías Utilizadas
+Este proyecto está optimizado para funcionar correctamente en GitHub Pages. Se han solucionado los siguientes problemas comunes:
 
-### Frontend
-- **HTML5**: Estructura semántica
-- **CSS3**: Estilos y animaciones
-- **JavaScript**: Interactividad y efectos
-- **Bootstrap 5.3.3**: Framework CSS responsivo
-- **Font Awesome**: Iconografía
-- **Devicon**: Iconos de tecnologías de programación
+### ✅ Problemas Solucionados:
 
-### Librerías
-- **jQuery 3.7.1**: Manipulación del DOM
-- **Typed.js**: Animación de escritura
-- **Boxicons**: Iconos adicionales
+1. **Código JavaScript Roto**: Eliminado código de cambio de idiomas que causaba errores
+2. **Conflicto de Animaciones**: Resuelto conflicto entre múltiples instancias de Typed.js
+3. **Recursos Faltantes**: Removidas referencias a archivos inexistentes
+4. **Rutas de Archivos**: Verificadas todas las rutas de imágenes y recursos
 
-## 📁 Estructura del Proyecto
+### 📁 Estructura de Archivos Compatible:
 
 ```
 cv-website-main/
@@ -45,117 +50,95 @@ cv-website-main/
 ├── styles.css              # Estilos principales
 ├── custom-styles.css       # Estilos personalizados
 ├── main.js                 # JavaScript principal
-├── README.md              # Documentación
-├── assets/
-│   ├── icons/
-│   │   ├── favicon.svg
-│   │   ├── LinkedIn.svg
-│   │   └── GitHub.svg
-│   ├── images/
-│   │   ├── email.webp
-│   │   ├── email1.svg
-│   │   ├── LinkedIn.svg
-│   │   └── GitHub.svg
-│   └── js/
-│       └── script.js
-├── libs/
+├── assets/                 # Recursos estáticos
+│   ├── images/            # Imágenes del portfolio
+│   ├── icons/             # Iconos SVG
+│   └── js/                # Scripts adicionales
+├── libs/                   # Librerías externas
 │   ├── bootstrap-5.3.3-dist/
-│   │   ├── css/
-│   │   │   └── bootstrap.min.css
-│   │   └── js/
-│   │       └── bootstrap.bundle.min.js
 │   ├── jquery-3.7.1/
-│   │   └── jquery.js
-│   ├── typed/
-│   │   └── typed.js
-│   └── boxicons-2.1.4/
-│       ├── css/
-│       │   └── boxicons.min.css
-│       └── fonts/
-│           └── [archivos de fuentes]
-├── mapm.jpg               # Foto de perfil
-├── Cert_NASA_mapm.jpg     # Certificado NASA
-└── Const_SIC_mapm.jpg     # Constancia Samsung
+│   ├── boxicons-2.1.4/
+│   └── typed/
+└── .github/workflows/      # Configuración de despliegue
+    └── deploy.yml
 ```
 
-## 🎯 Secciones del Sitio
+## 🔧 Instalación Local
 
-1. **Inicio**: Presentación personal con foto de perfil
-2. **Sobre Mí**: Información académica y experiencia
-3. **Tecnologías**: Habilidades técnicas organizadas por categorías
-4. **Servicios**: Servicios profesionales ofrecidos
-5. **Certificaciones**: Certificados y constancias
-6. **Contacto**: Información de contacto y redes sociales
+1. Clona el repositorio:
+```bash
+git clone https://github.com/tu-usuario/cv-website-main.git
+cd cv-website-main
+```
 
-## 🚀 Instalación y Uso
+2. Abre `index.html` en tu navegador o usa un servidor local:
+```bash
+# Con Python
+python -m http.server 8000
 
-### Requisitos
-- Navegador web moderno
-- Servidor web local (opcional)
+# Con Node.js
+npx serve .
+```
 
-### Instalación Local
-1. Clona o descarga el repositorio
-2. Abre `index.html` en tu navegador
-3. O ejecuta un servidor local:
-   ```bash
-   python3 -m http.server 8000
-   ```
-4. Visita `http://localhost:8000`
+## 🌐 Despliegue
+
+### GitHub Pages (Recomendado):
+
+1. Sube el código a tu repositorio de GitHub
+2. Ve a Settings > Pages
+3. Selecciona la rama `main` como fuente
+4. El sitio estará disponible en `https://tu-usuario.github.io/cv-website-main`
+
+### Otros Servicios:
+
+- **Netlify**: Arrastra la carpeta del proyecto
+- **Vercel**: Conecta tu repositorio de GitHub
+- **Firebase Hosting**: Usa Firebase CLI
 
 ## 📱 Responsive Design
 
 El sitio está optimizado para:
-- **Desktop**: 1200px+
-- **Tablet**: 768px - 1199px
-- **Mobile**: 320px - 767px
+- 📱 Móviles (320px+)
+- 📱 Tablets (768px+)
+- 💻 Desktop (1024px+)
+- 🖥️ Pantallas grandes (1200px+)
 
 ## 🎨 Personalización
 
-### Colores
-- **Color principal**: `#F06500` (naranja)
-- **Color oscuro**: `#373737`
-- **Fondo gris**: `rgba(254, 196, 72, 0.1)`
+### Colores:
+Los colores principales se pueden modificar en `styles.css`:
+```css
+:root {
+  --theme-color: #007bff;
+  --secondary-color: #6c757d;
+  --text-color: #333;
+  --bg-color: #fff;
+}
+```
 
-### Fuentes
-- **Principal**: Jost (Google Fonts)
-- **Iconos**: Font Awesome, Devicon, Boxicons
+### Contenido:
+- Edita `index.html` para cambiar el contenido
+- Modifica las imágenes en `assets/images/`
+- Actualiza los enlaces de proyectos y redes sociales
 
-## 📞 Información de Contacto
+## 🔍 SEO Optimizado
 
-- **Nombre**: Michell Alexis Policarpio Moran
+- Meta tags completos para redes sociales
+- Open Graph y Twitter Cards
+- Estructura semántica HTML5
+- Alt text en todas las imágenes
+- URLs amigables para navegación
+
+## 📞 Contacto
+
 - **Email**: michellpolicarpio@gmail.com
-- **Teléfono**: 229 136 0054
-- **Ubicación**: Veracruz, México
-- **LinkedIn**: [Michell Policarpio](https://www.linkedin.com/in/michell-alexis-policarpio-moran-332568348/)
+- **LinkedIn**: [Michell Alexis Policarpio Moran](https://www.linkedin.com/in/michell-alexis-policarpio-moran-332568348/)
 - **GitHub**: [MichellPolicarpio](https://github.com/MichellPolicarpio)
-
-## 🎓 Formación Académica
-
-- **Ingeniería en Informática**: Universidad Veracruzana (2021-2026)
-- **Samsung Innovation Campus**: Programa de Inteligencia Artificial y Habilidades de Liderazgo (150 horas)
-- **NASA Space Apps Challenge 2024**: Hackathon - Participante en sede Boca del Río, Veracruz
-  - Desarrollé una aplicación de escritorio dirigida al público infantil
-  - Utilicé bases de datos públicas de exoplanetas de la NASA
-  - Proyecto educativo para acercar la astronomía a los niños
-
-## 🚀 Proyectos Destacados
-
-### NASA Space Apps Challenge 2024
-- **Tipo**: Hackathon Internacional
-- **Proyecto**: Aplicación de escritorio educativa
-- **Público objetivo**: Público infantil
-- **Tecnologías**: Aplicación de escritorio con bases de datos de exoplanetas
-- **Descripción**: Desarrollo de una aplicación interactiva que utiliza bases de datos públicas de exoplanetas de la NASA para acercar la astronomía y la exploración espacial a los niños de manera educativa e interactiva.
 
 ## 📄 Licencia
 
-Este proyecto es de uso personal y educativo.
-
-## 🤝 Contribuciones
-
-Este es un proyecto personal, pero las sugerencias son bienvenidas.
+Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
 
 ---
 
-**Desarrollado con ❤️ por Michell Alexis Policarpio Moran**
-# PortafolioWeb
+⭐ Si te gusta este proyecto, ¡dale una estrella en GitHub!

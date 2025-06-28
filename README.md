@@ -1,3 +1,5 @@
+[🔗 Visualiza el portafolio en vivo en GitHub Pages](https://michellpolicarpio.github.io/PortafolioWeb/)
+
 # CV Web - Michell Alexis Policarpio Moran
 
 ## 📋 Descripción
@@ -127,17 +129,6 @@ El sitio está optimizado para:
   - Desarrollé una aplicación de escritorio dirigida al público infantil
   - Utilicé bases de datos públicas de exoplanetas de la NASA
   - Proyecto educativo para acercar la astronomía a los niños
-
-## 💻 Habilidades Técnicas
-
-### Lenguajes de Programación
-- C, C++, Python, Java
-
-### Desarrollo Web
-- HTML5, CSS3, JavaScript, Swift
-
-### Bases de Datos
-- MySQL, PostgreSQL, MongoDB
 
 ## 🚀 Proyectos Destacados
 

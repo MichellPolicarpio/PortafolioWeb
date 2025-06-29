@@ -1,5 +1,23 @@
 /* Estilos personalizados para el CV de Michell */
 
+/* Ajustes para la animación de escritura en la portada */
+.home-section .home-intro h1 {
+    line-height: 1.4 !important;
+    min-height: 280px !important;
+}
+
+@media (max-width: 1200px) {
+    .home-section .home-intro h1 {
+        min-height: 180px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-section .home-intro h1 {
+        min-height: 140px !important;
+    }
+}
+
 /* Ajustes para las imágenes */
 .home-image img {
     border-radius: 50%;
@@ -10,6 +28,17 @@
     aspect-ratio: 1/1;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Animación de entrada */
+    opacity: 0;
+    transform: translateX(50px) scale(0.8);
+    animation: slideInImage 1s ease-out 0.5s forwards;
+}
+
+@keyframes slideInImage {
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
 }
 
 .home-image img:hover {
@@ -461,4 +490,20 @@
   #carouselMobiPass .carousel-control-next {
     right: -15px;
   }
+}
+
+/* Centrar botones de la portada */
+.home-intro .btn-theme {
+    display: inline-block;
+    margin: 0.5rem !important;
+}
+
+.home-intro {
+    text-align: center !important;
+}
+
+@media (min-width: 992px) {
+    .home-intro {
+        text-align: left !important;
+    }
 } 

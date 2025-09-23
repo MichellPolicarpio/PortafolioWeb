@@ -1,0 +1,603 @@
+/* Estilos personalizados para el CV de Michell */
+
+/* Ajustes para la animación de escritura en la portada */
+.home-section .home-intro h1 {
+    line-height: 1.4 !important;
+    min-height: 280px !important;
+}
+
+@media (max-width: 1200px) {
+    .home-section .home-intro h1 {
+        min-height: 180px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-section .home-intro h1 {
+        min-height: 140px !important;
+    }
+}
+
+/* Asegurar que el texto justificado funcione correctamente */
+.text-justify {
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    hyphens: auto !important;
+}
+
+/* Ajustes específicos para los párrafos del About */
+.about-text .text-justify {
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1.5rem !important;
+}
+
+/* Ajustes para las imágenes */
+.home-image img {
+    border-radius: 50%;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Animación de entrada */
+    opacity: 0;
+    transform: translateX(50px) scale(0.8);
+    animation: slideInImage 1s ease-out 0.5s forwards;
+}
+
+@keyframes slideInImage {
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+.home-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.about-image {
+    border-radius: 15px;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+/* Responsive para imágenes */
+@media (max-width: 768px) {
+    .home-image img {
+        max-width: 250px;
+    }
+    
+    .about-image {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 576px) {
+    .home-image img {
+        max-width: 200px;
+    }
+    
+    .about-image {
+        max-width: 220px;
+    }
+}
+
+/* Ajustes para las tarjetas de certificaciones */
+.certification-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.certification-image:hover {
+    transform: scale(1.02);
+}
+
+/* Mejoras en las animaciones */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ajustes para el header fijo */
+.fixed-header {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+/* Mejoras en los botones */
+.btn-theme {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-theme::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn-theme:hover::before {
+    left: 100%;
+}
+
+/* Ajustes para las tarjetas de tecnologías */
+.feature-box-small {
+    transition: all 0.3s ease;
+}
+
+.feature-box-small:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Mejoras en el texto de presentación */
+.home-intro .name {
+    background: linear-gradient(45deg, var(--theme-color), #ff8c42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+/* Ajustes para el indicador de "Estudiante Activo" */
+.open-to-work {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    background: rgba(0, 128, 0, 0.1);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 128, 0, 0.3);
+}
+
+.green-dot {
+    margin-right: 8px;
+}
+
+/* Ajustes para los iconos de redes sociales */
+#social-networks img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+#social-networks img:hover {
+    transform: scale(1.1);
+}
+
+/* Ajustes para el icono de email */
+.mail-img {
+    width: 60px;
+    height: auto;
+}
+
+.mail {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.mail:hover {
+    color: var(--theme-color);
+    border-color: var(--theme-color);
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-2px);
+}
+
+/* Responsive para iconos sociales */
+@media (max-width: 768px) {
+    #social-networks img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .mail {
+        font-size: 1.2rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .mail-img {
+        width: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    #social-networks img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .mail {
+        font-size: 1rem;
+        padding: 0.3rem 0.6rem;
+    }
+    
+    .mail-img {
+        width: 40px;
+    }
+}
+
+/* Tarjetas de información de contacto */
+.contact-info-card {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 1.5rem 1rem;
+    margin: 0.5rem 0;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.contact-info-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    transition: left 0.5s;
+}
+
+.contact-info-card:hover::before {
+    left: 100%;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-color: rgba(255,255,255,0.3);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--theme-color), #ff8c42);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(240, 101, 0, 0.3);
+}
+
+.contact-icon i {
+    font-size: 1.5rem;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.contact-info-card:hover .contact-icon i {
+    transform: scale(1.1);
+}
+
+.contact-info-card h4 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-info-card p {
+    color: rgba(255,255,255,0.9);
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.contact-info-card p a {
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info-card p a:hover {
+    color: var(--theme-color);
+}
+
+.contact-subtitle {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.8rem;
+    font-style: italic;
+    display: block;
+    margin-top: 0.3rem;
+}
+
+/* Responsive para tarjetas de contacto */
+@media (max-width: 768px) {
+    .contact-info-card {
+        padding: 1.5rem 1rem;
+        margin: 0.5rem 0;
+    }
+    
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .contact-info-card h4 {
+        font-size: 1.3rem;
+    }
+    
+    .contact-info-card p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-info-card {
+        padding: 1rem 0.8rem;
+    }
+    
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .contact-icon i {
+        font-size: 1.2rem;
+    }
+    
+    .contact-info-card h4 {
+        font-size: 1.1rem;
+    }
+    
+    .contact-info-card p {
+        font-size: 0.9rem;
+    }
+    
+    .contact-subtitle {
+        font-size: 0.8rem;
+    }
+}
+
+/* Estilos para el título de la sección de contacto */
+.section-heading h2.text-white {
+    background: linear-gradient(45deg, var(--theme-color), #ff8c42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-heading .text-white-50 {
+    color: rgba(255,255,255,0.7) !important;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* Animación para las tarjetas de contacto */
+.contact-info-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.contact-info-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.contact-info-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para el carousel de MobiPass */
+#carouselMobiPass .carousel-item {
+  height: auto;
+}
+
+#carouselMobiPass .carousel-item .row {
+  height: 100%;
+}
+
+#carouselMobiPass .carousel-item img {
+  height: 250px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  padding: 10px;
+  background: transparent !important;
+  border-radius: 12px;
+  padding: 4px;
+}
+
+#carouselMobiPass .carousel-indicators {
+  bottom: -40px;
+}
+
+#carouselMobiPass .carousel-indicators button {
+  background-color: #373737;
+  border: 1px solid #373737;
+}
+
+#carouselMobiPass .carousel-indicators button.active {
+  background-color: var(--theme-color);
+  border-color: var(--theme-color);
+}
+
+#carouselMobiPass .carousel-control-prev,
+#carouselMobiPass .carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(55, 55, 55, 0.8);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#carouselMobiPass .carousel-control-prev {
+  left: -20px;
+}
+
+#carouselMobiPass .carousel-control-next {
+  right: -20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #carouselMobiPass .carousel-item img {
+    height: 180px;
+  }
+  
+  #carouselMobiPass .carousel-control-prev,
+  #carouselMobiPass .carousel-control-next {
+    width: 35px;
+    height: 35px;
+  }
+  
+  #carouselMobiPass .carousel-control-prev {
+    left: -15px;
+  }
+  
+  #carouselMobiPass .carousel-control-next {
+    right: -15px;
+  }
+}
+
+/* Centrar botones de la portada */
+.home-intro .btn-theme {
+    display: inline-block;
+    margin: 0.5rem !important;
+}
+
+.home-intro {
+    text-align: center !important;
+}
+
+@media (min-width: 992px) {
+    .home-intro {
+        text-align: left !important;
+    }
+}
+
+/* Estilos para el carousel de SICAPIS */
+#carouselSICAPIS .carousel-item {
+  height: auto;
+}
+
+#carouselSICAPIS .carousel-item img {
+  height: 320px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #14213d;
+  padding: 8px;
+  background: #14213d !important;
+  border: 2px solid #2c3e50;
+}
+
+#carouselSICAPIS .carousel-indicators {
+  bottom: -40px;
+}
+
+#carouselSICAPIS .carousel-indicators button {
+  background-color: #373737;
+  border: 1px solid #373737;
+}
+
+#carouselSICAPIS .carousel-indicators button.active {
+  background-color: var(--theme-color);
+  border-color: var(--theme-color);
+}
+
+#carouselSICAPIS .carousel-control-prev,
+#carouselSICAPIS .carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(55, 55, 55, 0.8);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#carouselSICAPIS .carousel-control-prev {
+  left: -20px;
+}
+
+#carouselSICAPIS .carousel-control-next {
+  right: -20px;
+}
+
+/* Responsive adjustments para SICAPIS */
+@media (max-width: 768px) {
+  #carouselSICAPIS .carousel-item img {
+    height: 240px;
+  }
+  
+  #carouselSICAPIS .carousel-control-prev,
+  #carouselSICAPIS .carousel-control-next {
+    width: 35px;
+    height: 35px;
+  }
+  
+  #carouselSICAPIS .carousel-control-prev {
+    left: -15px;
+  }
+  
+  #carouselSICAPIS .carousel-control-next {
+    right: -15px;
+  }
+}
+
+@media (max-width: 576px) {
+  #carouselSICAPIS .carousel-item img {
+    height: 200px;
+    padding: 4px;
+  }
+} 

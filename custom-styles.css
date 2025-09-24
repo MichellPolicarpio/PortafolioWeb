@@ -532,12 +532,14 @@
 }
 
 #carouselSICAPIS .carousel-item img {
-  height: 320px;
+  height: 350px;
+  width: 100%;
+  max-width: 550px;
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   background-color: #14213d;
-  padding: 8px;
+  padding: 1px 8px;
   background: #14213d !important;
   border: 2px solid #2c3e50;
 }
@@ -577,7 +579,8 @@
 /* Responsive adjustments para SICAPIS */
 @media (max-width: 768px) {
   #carouselSICAPIS .carousel-item img {
-    height: 240px;
+    height: 280px;
+    max-width: 450px;
   }
   
   #carouselSICAPIS .carousel-control-prev,
@@ -597,7 +600,8 @@
 
 @media (max-width: 576px) {
   #carouselSICAPIS .carousel-item img {
-    height: 200px;
-    padding: 4px;
+    height: 220px;
+    max-width: 380px;
+    padding: 0px 4px;
   }
 } 

@@ -226,4 +226,41 @@ document.addEventListener('DOMContentLoaded', () => {
         backToTopBtn.style.transform = 'translateY(0)';
         backToTopBtn.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
     });
+
+    // Modal para ampliar imágenes de proyectos
+    const projectModal = document.getElementById('projectImageModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('modalTitle');
+
+    if (projectModal) {
+        projectModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            const imageSrc = button.getAttribute('data-image-src');
+            const imageTitle = button.getAttribute('data-image-title');
+            
+            modalImage.src = imageSrc;
+            modalImage.alt = imageTitle;
+            modalTitle.textContent = imageTitle;
+        });
+
+        // Cerrar modal al hacer clic en la imagen
+        modalImage.addEventListener('click', () => {
+            const modalInstance = bootstrap.Modal.getInstance(projectModal);
+            if (modalInstance) {
+                modalInstance.hide();
+            }
+        });
+
+        // Navegación con teclado
+        document.addEventListener('keydown', (e) => {
+            if (projectModal.classList.contains('show')) {
+                if (e.key === 'Escape') {
+                    const modalInstance = bootstrap.Modal.getInstance(projectModal);
+                    if (modalInstance) {
+                        modalInstance.hide();
+                    }
+                }
+            }
+        });
+    }
 }); 
